@@ -8,4 +8,4 @@ Diese Dokumentation ist benutzerfreundlich und leicht verständlich gestaltet. S
 
 Als alleiniger Entwickler hinter diesem Projekt bin ich immer bereit, Unterstützung und Tutorials für diejenigen bereitzustellen, die sie benötigen. Die Wiki selbst hat Abschnitte in **Englisch** und **Deutsch**, was sie für ein breiteres Publikum zugänglich macht.
 
-Wenn Sie zusätzliche Unterstützung benötigen oder Fragen haben, können Sie mich gerne auf **Discord** (Louvii <3#0815) kontaktieren. Ich bin immer hier, um zu helfen!
+Wenn Sie zusätzliche Unterstützung benötigen oder Fragen haben, können Sie mich gerne auf **Discord** (Louvii <3#0815) kontaktieren. Ich bin immer hier, um zu helfen!y
