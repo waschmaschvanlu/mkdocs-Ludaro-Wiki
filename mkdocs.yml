@@ -2,9 +2,9 @@ site_name: Ludaro-Wiki
 repo_url: https://github.com/waschmaschvanlu/mkdocs-Ludaro-Wiki
 repo_name: Ludaro-Wiki
 theme:
-
- logo: assets/logo.png
- favicon : assets/favicon.png
+ logo: logo.png
+ favicon : logo.png
+ language: en
  name: material
  features: 
   - navigation.tracking
@@ -25,6 +25,10 @@ theme:
     lang:
      - en 
      - de
+  - i18n:
+    default_language: en
+    en: English
+    de: Deutsch
  
  palette:
       
@@ -56,13 +60,6 @@ extra:
     default: stable
     provider: mike
     homepage: http://ludaro.de
-  alternate:
-    - name: English
-      link: /english/
-      lang: en
-    - name: Deutsch
-      link: /deutsch/
-      lang: de
   social:
   - icon: fontawesome/brands/github-alt
     link: https://github.com/waschmaschvanlu
