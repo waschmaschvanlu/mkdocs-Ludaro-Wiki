@@ -6,7 +6,6 @@ theme:
  logo: assets/logo.png
  favicon : assets/favicon.png
  name: material
- language: en
  features: 
   - navigation.tracking
   - navigation.path
@@ -19,6 +18,7 @@ theme:
   - content.code.annotation
   - content.tabs.link
   - search.highlight
+  - navigation.tabs
 
  plugins:
   - search:
@@ -58,10 +58,10 @@ extra:
     homepage: http://ludaro.de
   alternate:
     - name: English
-      link: /en/
+      link: /english/
       lang: en
     - name: Deutsch
-      link: /de/
+      link: /deutsch/
       lang: de
   social:
   - icon: fontawesome/brands/github-alt
@@ -86,6 +86,6 @@ markdown_extensions:
  - pymdownx.emoji:
     emoji_index: !!python/name:materialx.emoji.twemoji
     emoji_generator: !!python/name:materialx.emoji.to_svg
- 
+
 copyright: | 
  &copy 2023 <a hfref="https://github.com/waschmaschvanlu" target="_blank" rel="noopener"> Ludaro</a>
