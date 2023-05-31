@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <header class="md-header">
+        <nav class="md-header-nav md-grid">
+            {% for nav_item in config.nav %}
+                {% if nav_item.title != 'Home' %}
+                    <a class="md-header-nav__button md-icon" href="{{ nav_item.url | url }}" title="{{ nav_item.title }}">
+                        {{ nav_item.title }}
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </nav>
+    </header>
+{% endblock %}

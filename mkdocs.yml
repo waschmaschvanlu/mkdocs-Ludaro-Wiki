@@ -18,7 +18,6 @@ theme:
   - content.code.annotation
   - content.tabs.link
   - search.highlight
-  - navigation.tabs
 
  plugins:
   - search:
@@ -54,12 +53,11 @@ theme:
 
 
 
-
 extra:
-  version:
-    default: stable
-    provider: mike
-    homepage: http://ludaro.de
+  # version:
+  #   default: stable
+  #   provider: mike
+  #   homepage: http://ludaro.de
   social:
   - icon: fontawesome/brands/github-alt
     link: https://github.com/waschmaschvanlu
@@ -84,5 +82,73 @@ markdown_extensions:
     emoji_index: !!python/name:materialx.emoji.twemoji
     emoji_generator: !!python/name:materialx.emoji.to_svg
 
+extra_javascript:
+  - js/custom.js
+
+extra_css:
+- css/custom.css
 copyright: | 
  &copy 2023 <a hfref="https://github.com/waschmaschvanlu" target="_blank" rel="noopener"> Ludaro</a>
+
+
+ 
+nav:
+  - 🇺🇸 English:
+    - 👋 Welcome: english/welcome.md
+
+    - 🐤 Lua Beginners:
+      - where to begin learning lua?: english/lua-beginners/begin.md 
+      - what is..: english/lua-beginners/whatis.md
+      - how to use: english/lua-beginners/howto.md
+
+    - 📚 NativeUI:
+      - What is: english/nativeui/whatis.md
+      - How to use: english/nativeui/howto.md
+      - Menu: english/nativeui/elements/menu.md
+
+    - Nativeui-Items:
+      - Item-Values: english/nativeui/items/item-values.md
+      - Item-Functions: english/nativeui/items/item-functions.md
+      - CheckBoxItem: english/nativeui/items/checkbox-item.md
+      - ColouredItem: english/nativeui/items/coloured-item.md
+      - Item: english/nativeui/items/item.md
+      - List-Item: english/nativeui/items/list-item.md
+      - ProgressItem: english/nativeui/items/progress-item.md
+      - SeperatorItem: english/nativeui/items/seperator-item.md
+      - SliderHeritageItem: english/nativeui/items/slider-heritage-item.md
+      - SliderItem: english/nativeui/items/slider-item.md
+      - SliderProgressItem: english/nativeui/items/slider-progress-item.md
+
+    - Elements: 
+      - Badge: english/nativeui/elements/badge.md
+      - Colours: english/nativeui/elements/colours.md
+      - ColoursPanel: english/nativeui/elements/colours-panel.md
+      - StringMeasurer: english/nativeui/elements/string-measurer.md
+
+    - Panels: 
+      - Colour-Panel: english/nativeui/elements/colour-panel.md
+      - Grid-Panel: english/nativeui/elements/grid-panel.md
+      - HorizontalOneLineGridPanel: english/nativeui/elements/horizontal-one-line-grid-panel.md
+      - Percentage-Panel: english/nativeui/elements/percentage-panel.md
+      - Statistics-Panel: english/nativeui/elements/statistics-panel.md
+      - VerticalOneGridPanel: english/nativeui/elements/vertical-one-grid-panel.md
+
+    - Usefull stuff for Developers:
+      - Snippets: english/snippets.md
+ 
+    - ESX-Coding:
+      - What is ESX?: english/esx/whatis.md
+      - How to use ESX?: english/esx/howto.md
+      - ESX Callbacks: english/esx/callbacks.md
+   
+
+    - QB-Coding:
+      - What is QB?: english/esx/whatis.md
+
+    - NUI (JS/HTML/CSS) QB-Coding:
+      - What is NUI?: english/nui/whatis.md
+
+  - 🇩🇪 Deutsch:
+    - 👋 Welcome: deutsch/willkommen.md
+    - 💻 NativeUI:
+      - Howto: deutsch/nativeui/howto.md
