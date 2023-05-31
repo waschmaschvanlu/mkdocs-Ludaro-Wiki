@@ -1,4 +1,4 @@
-if (window.location.pathname === '/mkdocs-Ludaro-Wiki/') {
+if (window.location.pathname === '/') {
     fetch('https://ipapi.co/json/')
       .then(response => response.json())
       .then(data => {
