@@ -1,0 +1,1571 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../logo.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.16">
+    
+    
+      
+        <title>Menu - Ludaro-Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#code-documentation-nativeui-lua-menu-creation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Ludaro-Wiki" class="md-header__button md-logo" aria-label="Ludaro-Wiki" data-md-component="logo">
+      
+  <img src="../../../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ludaro-Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Menu
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/waschmaschvanlu/mkdocs-Ludaro-Wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Ludaro-Wiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Ludaro-Wiki" class="md-nav__button md-logo" aria-label="Ludaro-Wiki" data-md-component="logo">
+      
+  <img src="../../../logo.png" alt="logo">
+
+    </a>
+    Ludaro-Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/waschmaschvanlu/mkdocs-Ludaro-Wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Ludaro-Wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          🇺🇸 English
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          🇺🇸 English
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../welcome/" class="md-nav__link">
+        👋 Welcome
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+          🐤 Lua Beginners
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          🐤 Lua Beginners
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lua-beginners/begin/" class="md-nav__link">
+        where to begin learning lua?
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lua-beginners/whatis/" class="md-nav__link">
+        what is..
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lua-beginners/howto.md" class="md-nav__link">
+        how to use
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+          📚 NativeUI
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          📚 NativeUI
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whatis/" class="md-nav__link">
+        What is
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/" class="md-nav__link">
+        How to use
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements/menu.md" class="md-nav__link">
+        Menu
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+          Nativeui-Items
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          Nativeui-Items
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items/item-values.md" class="md-nav__link">
+        Item-Values
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items/item-functions.md" class="md-nav__link">
+        Item-Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items/checkbox-item.md" class="md-nav__link">
+        CheckBoxItem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items/coloured-item.md" class="md-nav__link">
+        ColouredItem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items/item.md" class="md-nav__link">
+        Item
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items/list-item.md" class="md-nav__link">
+        List-Item
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items/progress-item.md" class="md-nav__link">
+        ProgressItem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items/seperator-item.md" class="md-nav__link">
+        SeperatorItem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items/slider-heritage-item.md" class="md-nav__link">
+        SliderHeritageItem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items/slider-item.md" class="md-nav__link">
+        SliderItem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items/slider-progress-item.md" class="md-nav__link">
+        SliderProgressItem
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+          Elements
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          Elements
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements/badge.md" class="md-nav__link">
+        Badge
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements/colours.md" class="md-nav__link">
+        Colours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements/colours-panel.md" class="md-nav__link">
+        ColoursPanel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements/string-measurer.md" class="md-nav__link">
+        StringMeasurer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+          Panels
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_6">
+          <span class="md-nav__icon md-icon"></span>
+          Panels
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements/colour-panel.md" class="md-nav__link">
+        Colour-Panel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements/grid-panel.md" class="md-nav__link">
+        Grid-Panel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements/horizontal-one-line-grid-panel.md" class="md-nav__link">
+        HorizontalOneLineGridPanel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements/percentage-panel.md" class="md-nav__link">
+        Percentage-Panel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements/statistics-panel.md" class="md-nav__link">
+        Statistics-Panel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements/vertical-one-grid-panel.md" class="md-nav__link">
+        VerticalOneGridPanel
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
+          Usefull stuff for Developers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_7">
+          <span class="md-nav__icon md-icon"></span>
+          Usefull stuff for Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../snippets.md" class="md-nav__link">
+        Snippets
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_8" id="__nav_1_8_label" tabindex="0">
+          ESX-Coding
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_8">
+          <span class="md-nav__icon md-icon"></span>
+          ESX-Coding
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../esx/whatis/" class="md-nav__link">
+        What is ESX?
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../esx/howto/" class="md-nav__link">
+        How to use ESX?
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../esx/callbacks/" class="md-nav__link">
+        ESX Callbacks
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_9" id="__nav_1_9_label" tabindex="0">
+          QB-Coding
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_9">
+          <span class="md-nav__icon md-icon"></span>
+          QB-Coding
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../esx/whatis/" class="md-nav__link">
+        What is QB?
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
+          NUI (JS/HTML/CSS) QB-Coding
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_10">
+          <span class="md-nav__icon md-icon"></span>
+          NUI (JS/HTML/CSS) QB-Coding
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nui/whatis/" class="md-nav__link">
+        What is NUI?
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          🇩🇪 Deutsch
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          🇩🇪 Deutsch
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deutsch/willkommen/" class="md-nav__link">
+        👋 Welcome
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          💻 NativeUI
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          💻 NativeUI
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deutsch/nativeui/howto/" class="md-nav__link">
+        Howto
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#code-documentation-nativeui-lua-menu-creation" class="md-nav__link">
+    Code Documentation: NativeUI Lua Menu Creation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-code" class="md-nav__link">
+    Source Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explanation" class="md-nav__link">
+    Explanation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-code_1" class="md-nav__link">
+    source code
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Menu</h1>
+
+<h2 id="code-documentation-nativeui-lua-menu-creation">Code Documentation: NativeUI Lua Menu Creation</h2>
+<h2 id="source-code">Source Code</h2>
+<p><a href="https://github.com/iZerkahh/NativeUILua_Reloaded/blob/5c93b99dcc1c57bde782d1da8c1cb08778044a19/src/NativeUI.lua#L29">source</a>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">--- CreateMenu</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1">--- Creates a new NativeUI menu.</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">---@param Title string               -- The title of the menu.</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">---@param Subtitle string            -- The subtitle of the menu.</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">---@param X number                   -- The X position of the menu.</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1">---@param Y number                   -- The Y position of the menu.</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1">---@param TxtDictionary string       -- The text dictionary for the menu.</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1">---@param TxtName string             -- The text name for the menu.</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1">---@param Heading number             -- The heading of the menu.</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1">---@param R number                   -- The red color value.</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1">---@param G number                   -- The green color value.</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1">---@param B number                   -- The blue color value.</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="c1">---@param A number                   -- The alpha value.</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="c1">---@return table                     -- The created menu object.</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="c1">---@public</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="kr">function</span> <span class="nc">NativeUI</span><span class="p">.</span><span class="nf">CreateMenu</span><span class="p">(</span><span class="n">Title</span><span class="p">,</span> <span class="n">Subtitle</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">TxtDictionary</span><span class="p">,</span> <span class="n">TxtName</span><span class="p">,</span> <span class="n">Heading</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">G</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+</code></pre></div></p>
+<h2 id="explanation">Explanation</h2>
+<p>This function creates a new NativeUI menu. It takes several parameters to customize the appearance and behavior of the menu.</p>
+<p>Parameters:</p>
+<ul>
+<li><code>Title</code> (string): The title of the menu. It will be displayed at the top of the menu.</li>
+<li><code>Subtitle</code> (string): The subtitle of the menu. It will be displayed below the title.</li>
+<li><code>X</code> (number): The X position of the menu on the screen.</li>
+<li><code>Y</code> (number): The Y position of the menu on the screen.</li>
+<li><code>TxtDictionary</code> (string): The text dictionary for the menu. It determines the font used for the menu text.</li>
+<li><code>TxtName</code> (string): The text name for the menu. It specifies the font style for the menu text.</li>
+<li><code>Heading</code> (number): The heading of the menu. It represents the rotation angle of the menu.</li>
+<li><code>R</code> (number): The red color value for the menu elements.</li>
+<li><code>G</code> (number): The green color value for the menu elements.</li>
+<li><code>B</code> (number): The blue color value for the menu elements.</li>
+<li><code>A</code> (number): The alpha value for the menu elements (transparency).</li>
+</ul>
+<p>Return Value:</p>
+<ul>
+<li><code>table</code>: The created menu object. It can be used to add items, handle events, and customize the menu further.</li>
+</ul>
+<p>Note: The function <code>NativeUI.CreateMenu</code> is a wrapper around the <code>UIMenu.New</code> function defined below. It sets default values for some parameters and provides a simplified interface for creating menus.</p>
+<p>The <code>UIMenu.New</code> function is the core implementation of the menu creation process. It initializes various properties and elements of the menu.</p>
+<p>It is recommended to refer to the source code links provided in the comments for a detailed understanding of the code logic and implementation details.</p>
+<p>Please note that the code provided is part of the NativeUILua Reloaded library, which is a modified and improved version of the original NativeUI library for Grand Theft Auto V modding.</p>
+<h2 id="usage">Usage</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a> <span class="n">menu</span> <span class="o">=</span> <span class="n">NativeUI</span><span class="p">.</span><span class="n">CreateMenu</span><span class="p">(</span><span class="s2">&quot;YOUR MENU NAME&quot;</span><span class="p">,</span><span class="s2">&quot;YOUR MENU DESCRIPTION&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="source-code_1">source code</h2>
+<p><a href="https://github.com/iZerkahh/NativeUILua_Reloaded/blob/5c93b99dcc1c57bde782d1da8c1cb08778044a19/src/UIMenu/UIMenu.lua#LL27C1-L27C1">source</a>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kr">function</span> <span class="nc">UIMenu</span><span class="p">.</span><span class="nf">New</span><span class="p">(</span><span class="n">Title</span><span class="p">,</span> <span class="n">Subtitle</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">TxtDictionary</span><span class="p">,</span> <span class="n">TxtName</span><span class="p">,</span> <span class="n">Heading</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">G</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="kd">local</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="nb">tonumber</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">tonumber</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">0</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="kr">if</span> <span class="n">Title</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="kr">then</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="n">Title</span> <span class="o">=</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">Title</span><span class="p">)</span> <span class="ow">or</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="kr">else</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        <span class="n">Title</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="kr">end</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="kr">if</span> <span class="n">Subtitle</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="kr">then</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        <span class="n">Subtitle</span> <span class="o">=</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">Subtitle</span><span class="p">)</span> <span class="ow">or</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="kr">else</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="n">Subtitle</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="kr">end</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="kr">if</span> <span class="n">TxtDictionary</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="kr">then</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>        <span class="n">TxtDictionary</span> <span class="o">=</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">TxtDictionary</span><span class="p">)</span> <span class="ow">or</span> <span class="s2">&quot;commonmenu&quot;</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    <span class="kr">else</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>        <span class="n">TxtDictionary</span> <span class="o">=</span> <span class="s2">&quot;commonmenu&quot;</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    <span class="kr">end</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>    <span class="kr">if</span> <span class="n">TxtName</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="kr">then</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>        <span class="n">TxtName</span> <span class="o">=</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">TxtName</span><span class="p">)</span> <span class="ow">or</span> <span class="s2">&quot;interaction_bgd&quot;</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>    <span class="kr">else</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>        <span class="n">TxtName</span> <span class="o">=</span> <span class="s2">&quot;interaction_bgd&quot;</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>    <span class="kr">end</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    <span class="kr">if</span> <span class="n">Heading</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="kr">then</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>        <span class="n">Heading</span> <span class="o">=</span> <span class="nb">tonumber</span><span class="p">(</span><span class="n">Heading</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">0</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>    <span class="kr">else</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>        <span class="n">Heading</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>    <span class="kr">end</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>    <span class="kr">if</span> <span class="n">R</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="kr">then</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>        <span class="n">R</span> <span class="o">=</span> <span class="nb">tonumber</span><span class="p">(</span><span class="n">R</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">255</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>    <span class="kr">else</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>        <span class="n">R</span> <span class="o">=</span> <span class="mi">255</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>    <span class="kr">end</span>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>    <span class="kr">if</span> <span class="n">G</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="kr">then</span>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>        <span class="n">G</span> <span class="o">=</span> <span class="nb">tonumber</span><span class="p">(</span><span class="n">G</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">255</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>    <span class="kr">else</span>
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>        <span class="n">G</span> <span class="o">=</span> <span class="mi">255</span>
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>    <span class="kr">end</span>
+<a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>    <span class="kr">if</span> <span class="n">B</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="kr">then</span>
+<a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>        <span class="n">B</span> <span class="o">=</span> <span class="nb">tonumber</span><span class="p">(</span><span class="n">B</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">255</span>
+<a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a>    <span class="kr">else</span>
+<a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a>        <span class="n">B</span> <span class="o">=</span> <span class="mi">255</span>
+<a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a>    <span class="kr">end</span>
+<a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a>    <span class="kr">if</span> <span class="n">A</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="kr">then</span>
+<a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a>        <span class="n">A</span> <span class="o">=</span> <span class="nb">tonumber</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">255</span>
+<a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a>    <span class="kr">else</span>
+<a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a>        <span class="n">A</span> <span class="o">=</span> <span class="mi">255</span>
+<a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a>    <span class="kr">end</span>
+<a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a>    <span class="kd">local</span> <span class="n">_UIMenu</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a>        <span class="n">Logo</span> <span class="o">=</span> <span class="n">Sprite</span><span class="p">.</span><span class="n">New</span><span class="p">(</span><span class="n">TxtDictionary</span><span class="p">,</span> <span class="n">TxtName</span><span class="p">,</span> <span class="mi">0</span> <span class="o">+</span> <span class="n">X</span><span class="p">,</span> <span class="mi">0</span> <span class="o">+</span> <span class="n">Y</span><span class="p">,</span> <span class="mi">431</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="n">Heading</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">G</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">A</span><span class="p">),</span>
+<a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a>        <span class="n">Banner</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+<a id="__codelineno-2-51" name="__codelineno-2-51" href="#__codelineno-2-51"></a>        <span class="n">Title</span> <span class="o">=</span> <span class="n">UIResText</span><span class="p">.</span><span class="n">New</span><span class="p">(</span><span class="n">Title</span><span class="p">,</span> <span class="mi">215</span> <span class="o">+</span> <span class="n">X</span><span class="p">,</span> <span class="mi">20</span> <span class="o">+</span> <span class="n">Y</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+<a id="__codelineno-2-52" name="__codelineno-2-52" href="#__codelineno-2-52"></a>        <span class="n">BetterSize</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-53" name="__codelineno-2-53" href="#__codelineno-2-53"></a>        <span class="n">Subtitle</span> <span class="o">=</span> <span class="p">{</span> <span class="n">ExtraY</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">},</span>
+<a id="__codelineno-2-54" name="__codelineno-2-54" href="#__codelineno-2-54"></a>        <span class="n">WidthOffset</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-2-55" name="__codelineno-2-55" href="#__codelineno-2-55"></a>        <span class="n">Position</span> <span class="o">=</span> <span class="p">{</span> <span class="n">X</span> <span class="o">=</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">Y</span> <span class="p">},</span>
+<a id="__codelineno-2-56" name="__codelineno-2-56" href="#__codelineno-2-56"></a>        <span class="n">DrawOffset</span> <span class="o">=</span> <span class="p">{</span> <span class="n">X</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">},</span>
+<a id="__codelineno-2-57" name="__codelineno-2-57" href="#__codelineno-2-57"></a>        <span class="n">Pagination</span> <span class="o">=</span> <span class="p">{</span> <span class="n">Min</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Max</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">Total</span> <span class="o">=</span> <span class="mi">9</span> <span class="p">},</span>
+<a id="__codelineno-2-58" name="__codelineno-2-58" href="#__codelineno-2-58"></a>        <span class="n">PageCounter</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-2-59" name="__codelineno-2-59" href="#__codelineno-2-59"></a>            <span class="n">isCustom</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-2-60" name="__codelineno-2-60" href="#__codelineno-2-60"></a>            <span class="n">PreText</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-61" name="__codelineno-2-61" href="#__codelineno-2-61"></a>        <span class="p">},</span>
+<a id="__codelineno-2-62" name="__codelineno-2-62" href="#__codelineno-2-62"></a>        <span class="n">Extra</span> <span class="o">=</span> <span class="p">{},</span>
+<a id="__codelineno-2-63" name="__codelineno-2-63" href="#__codelineno-2-63"></a>        <span class="n">Description</span> <span class="o">=</span> <span class="p">{},</span>
+<a id="__codelineno-2-64" name="__codelineno-2-64" href="#__codelineno-2-64"></a>        <span class="n">Items</span> <span class="o">=</span> <span class="p">{},</span>
+<a id="__codelineno-2-65" name="__codelineno-2-65" href="#__codelineno-2-65"></a>        <span class="n">Windows</span> <span class="o">=</span> <span class="p">{},</span>
+<a id="__codelineno-2-66" name="__codelineno-2-66" href="#__codelineno-2-66"></a>        <span class="n">Children</span> <span class="o">=</span> <span class="p">{},</span>
+<a id="__codelineno-2-67" name="__codelineno-2-67" href="#__codelineno-2-67"></a>        <span class="n">Controls</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-2-68" name="__codelineno-2-68" href="#__codelineno-2-68"></a>            <span class="n">Back</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-2-69" name="__codelineno-2-69" href="#__codelineno-2-69"></a>                <span class="n">Enabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-70" name="__codelineno-2-70" href="#__codelineno-2-70"></a>            <span class="p">},</span>
+<a id="__codelineno-2-71" name="__codelineno-2-71" href="#__codelineno-2-71"></a>            <span class="n">Select</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-2-72" name="__codelineno-2-72" href="#__codelineno-2-72"></a>                <span class="n">Enabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-73" name="__codelineno-2-73" href="#__codelineno-2-73"></a>            <span class="p">},</span>
+<a id="__codelineno-2-74" name="__codelineno-2-74" href="#__codelineno-2-74"></a>            <span class="n">Left</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-2-75" name="__codelineno-2-75" href="#__codelineno-2-75"></a>                <span class="n">Enabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-76" name="__codelineno-2-76" href="#__codelineno-2-76"></a>            <span class="p">},</span>
+<a id="__codelineno-2-77" name="__codelineno-2-77" href="#__codelineno-2-77"></a>            <span class="n">Right</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-2-78" name="__codelineno-2-78" href="#__codelineno-2-78"></a>                <span class="n">Enabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-79" name="__codelineno-2-79" href="#__codelineno-2-79"></a>            <span class="p">},</span>
+<a id="__codelineno-2-80" name="__codelineno-2-80" href="#__codelineno-2-80"></a>            <span class="n">Up</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-2-81" name="__codelineno-2-81" href="#__codelineno-2-81"></a>                <span class="n">Enabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-82" name="__codelineno-2-82" href="#__codelineno-2-82"></a>            <span class="p">},</span>
+<a id="__codelineno-2-83" name="__codelineno-2-83" href="#__codelineno-2-83"></a>            <span class="n">Down</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-2-84" name="__codelineno-2-84" href="#__codelineno-2-84"></a>                <span class="n">Enabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-85" name="__codelineno-2-85" href="#__codelineno-2-85"></a>            <span class="p">},</span>
+<a id="__codelineno-2-86" name="__codelineno-2-86" href="#__codelineno-2-86"></a>        <span class="p">},</span>
+<a id="__codelineno-2-87" name="__codelineno-2-87" href="#__codelineno-2-87"></a>        <span class="n">ParentMenu</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+<a id="__codelineno-2-88" name="__codelineno-2-88" href="#__codelineno-2-88"></a>        <span class="n">ParentItem</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+<a id="__codelineno-2-89" name="__codelineno-2-89" href="#__codelineno-2-89"></a>        <span class="n">_Visible</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-2-90" name="__codelineno-2-90" href="#__codelineno-2-90"></a>        <span class="n">ActiveItem</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span>
+<a id="__codelineno-2-91" name="__codelineno-2-91" href="#__codelineno-2-91"></a>        <span class="n">Dirty</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<a id="__codelineno-2-92" name="__codelineno-2-92" href="#__codelineno-2-92"></a>        <span class="n">ReDraw</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-93" name="__codelineno-2-93" href="#__codelineno-2-93"></a>        <span class="n">InstructionalScaleform</span> <span class="o">=</span> <span class="n">RequestScaleformMovie</span><span class="p">(</span><span class="s2">&quot;INSTRUCTIONAL_BUTTONS&quot;</span><span class="p">),</span>
+<a id="__codelineno-2-94" name="__codelineno-2-94" href="#__codelineno-2-94"></a>        <span class="n">InstructionalButtons</span> <span class="o">=</span> <span class="p">{},</span>
+<a id="__codelineno-2-95" name="__codelineno-2-95" href="#__codelineno-2-95"></a>        <span class="n">OnIndexChange</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">menu</span><span class="p">,</span> <span class="n">newindex</span><span class="p">)</span>
+<a id="__codelineno-2-96" name="__codelineno-2-96" href="#__codelineno-2-96"></a>        <span class="kr">end</span><span class="p">,</span>
+<a id="__codelineno-2-97" name="__codelineno-2-97" href="#__codelineno-2-97"></a>        <span class="n">OnListChange</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">menu</span><span class="p">,</span> <span class="n">list</span><span class="p">,</span> <span class="n">newindex</span><span class="p">)</span>
+<a id="__codelineno-2-98" name="__codelineno-2-98" href="#__codelineno-2-98"></a>        <span class="kr">end</span><span class="p">,</span>
+<a id="__codelineno-2-99" name="__codelineno-2-99" href="#__codelineno-2-99"></a>        <span class="n">OnSliderChange</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">menu</span><span class="p">,</span> <span class="n">slider</span><span class="p">,</span> <span class="n">newindex</span><span class="p">)</span>
+<a id="__codelineno-2-100" name="__codelineno-2-100" href="#__codelineno-2-100"></a>        <span class="kr">end</span><span class="p">,</span>
+<a id="__codelineno-2-101" name="__codelineno-2-101" href="#__codelineno-2-101"></a>        <span class="n">OnProgressChange</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">menu</span><span class="p">,</span> <span class="n">progress</span><span class="p">,</span> <span class="n">newindex</span><span class="p">)</span>
+<a id="__codelineno-2-102" name="__codelineno-2-102" href="#__codelineno-2-102"></a>        <span class="kr">end</span><span class="p">,</span>
+<a id="__codelineno-2-103" name="__codelineno-2-103" href="#__codelineno-2-103"></a>        <span class="n">OnCheckboxChange</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">menu</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">checked</span><span class="p">)</span>
+<a id="__codelineno-2-104" name="__codelineno-2-104" href="#__codelineno-2-104"></a>        <span class="kr">end</span><span class="p">,</span>
+<a id="__codelineno-2-105" name="__codelineno-2-105" href="#__codelineno-2-105"></a>        <span class="n">OnListSelect</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">menu</span><span class="p">,</span> <span class="n">list</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+<a id="__codelineno-2-106" name="__codelineno-2-106" href="#__codelineno-2-106"></a>        <span class="kr">end</span><span class="p">,</span>
+<a id="__codelineno-2-107" name="__codelineno-2-107" href="#__codelineno-2-107"></a>        <span class="n">OnSliderSelect</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">menu</span><span class="p">,</span> <span class="n">slider</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+<a id="__codelineno-2-108" name="__codelineno-2-108" href="#__codelineno-2-108"></a>        <span class="kr">end</span><span class="p">,</span>
+<a id="__codelineno-2-109" name="__codelineno-2-109" href="#__codelineno-2-109"></a>        <span class="n">OnProgressSelect</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">menu</span><span class="p">,</span> <span class="n">progress</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+<a id="__codelineno-2-110" name="__codelineno-2-110" href="#__codelineno-2-110"></a>        <span class="kr">end</span><span class="p">,</span>
+<a id="__codelineno-2-111" name="__codelineno-2-111" href="#__codelineno-2-111"></a>        <span class="n">OnItemSelect</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">menu</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+<a id="__codelineno-2-112" name="__codelineno-2-112" href="#__codelineno-2-112"></a>        <span class="kr">end</span><span class="p">,</span>
+<a id="__codelineno-2-113" name="__codelineno-2-113" href="#__codelineno-2-113"></a>        <span class="n">OnMenuChanged</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">menu</span><span class="p">,</span> <span class="n">newmenu</span><span class="p">,</span> <span class="n">forward</span><span class="p">)</span>
+<a id="__codelineno-2-114" name="__codelineno-2-114" href="#__codelineno-2-114"></a>        <span class="kr">end</span><span class="p">,</span>
+<a id="__codelineno-2-115" name="__codelineno-2-115" href="#__codelineno-2-115"></a>        <span class="n">OnMenuClosed</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">menu</span><span class="p">)</span>
+<a id="__codelineno-2-116" name="__codelineno-2-116" href="#__codelineno-2-116"></a>        <span class="kr">end</span><span class="p">,</span>
+<a id="__codelineno-2-117" name="__codelineno-2-117" href="#__codelineno-2-117"></a>        <span class="n">Settings</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-2-118" name="__codelineno-2-118" href="#__codelineno-2-118"></a>            <span class="n">InstructionalButtons</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-119" name="__codelineno-2-119" href="#__codelineno-2-119"></a>            <span class="n">MultilineFormats</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-120" name="__codelineno-2-120" href="#__codelineno-2-120"></a>            <span class="n">ScaleWithSafezone</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-121" name="__codelineno-2-121" href="#__codelineno-2-121"></a>            <span class="n">ResetCursorOnOpen</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-122" name="__codelineno-2-122" href="#__codelineno-2-122"></a>            <span class="n">MouseControlsEnabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-123" name="__codelineno-2-123" href="#__codelineno-2-123"></a>            <span class="n">MouseEdgeEnabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-124" name="__codelineno-2-124" href="#__codelineno-2-124"></a>            <span class="n">ControlDisablingEnabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-125" name="__codelineno-2-125" href="#__codelineno-2-125"></a>            <span class="n">DrawOrder</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+<a id="__codelineno-2-126" name="__codelineno-2-126" href="#__codelineno-2-126"></a>            <span class="n">Audio</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-2-127" name="__codelineno-2-127" href="#__codelineno-2-127"></a>                <span class="n">Library</span> <span class="o">=</span> <span class="s2">&quot;HUD_FRONTEND_DEFAULT_SOUNDSET&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-128" name="__codelineno-2-128" href="#__codelineno-2-128"></a>                <span class="n">UpDown</span> <span class="o">=</span> <span class="s2">&quot;NAV_UP_DOWN&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-129" name="__codelineno-2-129" href="#__codelineno-2-129"></a>                <span class="n">LeftRight</span> <span class="o">=</span> <span class="s2">&quot;NAV_LEFT_RIGHT&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-130" name="__codelineno-2-130" href="#__codelineno-2-130"></a>                <span class="n">Select</span> <span class="o">=</span> <span class="s2">&quot;SELECT&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-131" name="__codelineno-2-131" href="#__codelineno-2-131"></a>                <span class="n">Back</span> <span class="o">=</span> <span class="s2">&quot;BACK&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-132" name="__codelineno-2-132" href="#__codelineno-2-132"></a>                <span class="n">Error</span> <span class="o">=</span> <span class="s2">&quot;ERROR&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-133" name="__codelineno-2-133" href="#__codelineno-2-133"></a>            <span class="p">},</span>
+<a id="__codelineno-2-134" name="__codelineno-2-134" href="#__codelineno-2-134"></a>            <span class="n">EnabledControls</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-2-135" name="__codelineno-2-135" href="#__codelineno-2-135"></a>                <span class="n">Controller</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-2-136" name="__codelineno-2-136" href="#__codelineno-2-136"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="p">},</span> <span class="c1">-- Look Up and Down</span>
+<a id="__codelineno-2-137" name="__codelineno-2-137" href="#__codelineno-2-137"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="p">},</span> <span class="c1">-- Look Left and Right</span>
+<a id="__codelineno-2-138" name="__codelineno-2-138" href="#__codelineno-2-138"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">25</span> <span class="p">},</span> <span class="c1">-- Aim</span>
+<a id="__codelineno-2-139" name="__codelineno-2-139" href="#__codelineno-2-139"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">24</span> <span class="p">},</span> <span class="c1">-- Attack</span>
+<a id="__codelineno-2-140" name="__codelineno-2-140" href="#__codelineno-2-140"></a>                <span class="p">},</span>
+<a id="__codelineno-2-141" name="__codelineno-2-141" href="#__codelineno-2-141"></a>                <span class="n">Keyboard</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-2-142" name="__codelineno-2-142" href="#__codelineno-2-142"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">201</span> <span class="p">},</span> <span class="c1">-- Select</span>
+<a id="__codelineno-2-143" name="__codelineno-2-143" href="#__codelineno-2-143"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">195</span> <span class="p">},</span> <span class="c1">-- X axis</span>
+<a id="__codelineno-2-144" name="__codelineno-2-144" href="#__codelineno-2-144"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">196</span> <span class="p">},</span> <span class="c1">-- Y axis</span>
+<a id="__codelineno-2-145" name="__codelineno-2-145" href="#__codelineno-2-145"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">187</span> <span class="p">},</span> <span class="c1">-- Down</span>
+<a id="__codelineno-2-146" name="__codelineno-2-146" href="#__codelineno-2-146"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">188</span> <span class="p">},</span> <span class="c1">-- Up</span>
+<a id="__codelineno-2-147" name="__codelineno-2-147" href="#__codelineno-2-147"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">189</span> <span class="p">},</span> <span class="c1">-- Left</span>
+<a id="__codelineno-2-148" name="__codelineno-2-148" href="#__codelineno-2-148"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">190</span> <span class="p">},</span> <span class="c1">-- Right</span>
+<a id="__codelineno-2-149" name="__codelineno-2-149" href="#__codelineno-2-149"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">202</span> <span class="p">},</span> <span class="c1">-- Back</span>
+<a id="__codelineno-2-150" name="__codelineno-2-150" href="#__codelineno-2-150"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">217</span> <span class="p">},</span> <span class="c1">-- Select</span>
+<a id="__codelineno-2-151" name="__codelineno-2-151" href="#__codelineno-2-151"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">242</span> <span class="p">},</span> <span class="c1">-- Scroll down</span>
+<a id="__codelineno-2-152" name="__codelineno-2-152" href="#__codelineno-2-152"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">241</span> <span class="p">},</span> <span class="c1">-- Scroll up</span>
+<a id="__codelineno-2-153" name="__codelineno-2-153" href="#__codelineno-2-153"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">239</span> <span class="p">},</span> <span class="c1">-- Cursor X</span>
+<a id="__codelineno-2-154" name="__codelineno-2-154" href="#__codelineno-2-154"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">240</span> <span class="p">},</span> <span class="c1">-- Cursor Y</span>
+<a id="__codelineno-2-155" name="__codelineno-2-155" href="#__codelineno-2-155"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">31</span> <span class="p">},</span> <span class="c1">-- Move Up and Down</span>
+<a id="__codelineno-2-156" name="__codelineno-2-156" href="#__codelineno-2-156"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">30</span> <span class="p">},</span> <span class="c1">-- Move Left and Right</span>
+<a id="__codelineno-2-157" name="__codelineno-2-157" href="#__codelineno-2-157"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">21</span> <span class="p">},</span> <span class="c1">-- Sprint</span>
+<a id="__codelineno-2-158" name="__codelineno-2-158" href="#__codelineno-2-158"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">22</span> <span class="p">},</span> <span class="c1">-- Jump</span>
+<a id="__codelineno-2-159" name="__codelineno-2-159" href="#__codelineno-2-159"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">23</span> <span class="p">},</span> <span class="c1">-- Enter</span>
+<a id="__codelineno-2-160" name="__codelineno-2-160" href="#__codelineno-2-160"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">75</span> <span class="p">},</span> <span class="c1">-- Exit Vehicle</span>
+<a id="__codelineno-2-161" name="__codelineno-2-161" href="#__codelineno-2-161"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">71</span> <span class="p">},</span> <span class="c1">-- Accelerate Vehicle</span>
+<a id="__codelineno-2-162" name="__codelineno-2-162" href="#__codelineno-2-162"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">72</span> <span class="p">},</span> <span class="c1">-- Vehicle Brake</span>
+<a id="__codelineno-2-163" name="__codelineno-2-163" href="#__codelineno-2-163"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">59</span> <span class="p">},</span> <span class="c1">-- Move Vehicle Left and Right</span>
+<a id="__codelineno-2-164" name="__codelineno-2-164" href="#__codelineno-2-164"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">89</span> <span class="p">},</span> <span class="c1">-- Fly Yaw Left</span>
+<a id="__codelineno-2-165" name="__codelineno-2-165" href="#__codelineno-2-165"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">9</span> <span class="p">},</span> <span class="c1">-- Fly Left and Right</span>
+<a id="__codelineno-2-166" name="__codelineno-2-166" href="#__codelineno-2-166"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span> <span class="p">},</span> <span class="c1">-- Fly Up and Down</span>
+<a id="__codelineno-2-167" name="__codelineno-2-167" href="#__codelineno-2-167"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">90</span> <span class="p">},</span> <span class="c1">-- Fly Yaw Right</span>
+<a id="__codelineno-2-168" name="__codelineno-2-168" href="#__codelineno-2-168"></a>                    <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">76</span> <span class="p">},</span> <span class="c1">-- Vehicle Handbrake</span>
+<a id="__codelineno-2-169" name="__codelineno-2-169" href="#__codelineno-2-169"></a>                <span class="p">},</span>
+<a id="__codelineno-2-170" name="__codelineno-2-170" href="#__codelineno-2-170"></a>            <span class="p">},</span>
+<a id="__codelineno-2-171" name="__codelineno-2-171" href="#__codelineno-2-171"></a>        <span class="p">}</span>
+<a id="__codelineno-2-172" name="__codelineno-2-172" href="#__codelineno-2-172"></a>    <span class="p">}</span>
+<a id="__codelineno-2-173" name="__codelineno-2-173" href="#__codelineno-2-173"></a>
+<a id="__codelineno-2-174" name="__codelineno-2-174" href="#__codelineno-2-174"></a>    <span class="kr">if</span> <span class="n">Subtitle</span> <span class="o">~=</span> <span class="s2">&quot;&quot;</span> <span class="ow">and</span> <span class="n">Subtitle</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="kr">then</span>
+<a id="__codelineno-2-175" name="__codelineno-2-175" href="#__codelineno-2-175"></a>        <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Subtitle</span><span class="p">.</span><span class="n">Rectangle</span> <span class="o">=</span> <span class="n">UIResRectangle</span><span class="p">.</span><span class="n">New</span><span class="p">(</span><span class="mi">0</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="mi">107</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">431</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+<a id="__codelineno-2-176" name="__codelineno-2-176" href="#__codelineno-2-176"></a>        <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Subtitle</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">UIResText</span><span class="p">.</span><span class="n">New</span><span class="p">(</span><span class="n">Subtitle</span><span class="p">,</span> <span class="mi">8</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="mi">110</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mf">0.35</span><span class="p">,</span> <span class="mi">245</span><span class="p">,</span> <span class="mi">245</span><span class="p">,</span> <span class="mi">245</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-2-177" name="__codelineno-2-177" href="#__codelineno-2-177"></a>        <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Subtitle</span><span class="p">.</span><span class="n">BackupText</span> <span class="o">=</span> <span class="n">Subtitle</span>
+<a id="__codelineno-2-178" name="__codelineno-2-178" href="#__codelineno-2-178"></a>        <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Subtitle</span><span class="p">.</span><span class="n">Formatted</span> <span class="o">=</span> <span class="kc">false</span>
+<a id="__codelineno-2-179" name="__codelineno-2-179" href="#__codelineno-2-179"></a>        <span class="kr">if</span> <span class="n">string</span><span class="p">.</span><span class="n">starts</span><span class="p">(</span><span class="n">Subtitle</span><span class="p">,</span> <span class="s2">&quot;~&quot;</span><span class="p">)</span> <span class="kr">then</span>
+<a id="__codelineno-2-180" name="__codelineno-2-180" href="#__codelineno-2-180"></a>            <span class="n">_UIMenu</span><span class="p">.</span><span class="n">PageCounter</span><span class="p">.</span><span class="n">PreText</span> <span class="o">=</span> <span class="nb">string.sub</span><span class="p">(</span><span class="n">Subtitle</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<a id="__codelineno-2-181" name="__codelineno-2-181" href="#__codelineno-2-181"></a>        <span class="kr">end</span>
+<a id="__codelineno-2-182" name="__codelineno-2-182" href="#__codelineno-2-182"></a>        <span class="n">_UIMenu</span><span class="p">.</span><span class="n">PageCounter</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">UIResText</span><span class="p">.</span><span class="n">New</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="mi">425</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="mi">110</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mf">0.35</span><span class="p">,</span> <span class="mi">245</span><span class="p">,</span> <span class="mi">245</span><span class="p">,</span> <span class="mi">245</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Right&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-183" name="__codelineno-2-183" href="#__codelineno-2-183"></a>        <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Subtitle</span><span class="p">.</span><span class="n">ExtraY</span> <span class="o">=</span> <span class="mi">37</span>
+<a id="__codelineno-2-184" name="__codelineno-2-184" href="#__codelineno-2-184"></a>    <span class="kr">end</span>
+<a id="__codelineno-2-185" name="__codelineno-2-185" href="#__codelineno-2-185"></a>
+<a id="__codelineno-2-186" name="__codelineno-2-186" href="#__codelineno-2-186"></a>    <span class="n">_UIMenu</span><span class="p">.</span><span class="n">ArrowSprite</span> <span class="o">=</span> <span class="n">Sprite</span><span class="p">.</span><span class="n">New</span><span class="p">(</span><span class="s2">&quot;commonmenu&quot;</span><span class="p">,</span> <span class="s2">&quot;shop_arrows_upanddown&quot;</span><span class="p">,</span> <span class="mi">190</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="mi">147</span> <span class="o">+</span> <span class="mi">37</span> <span class="o">*</span> <span class="p">(</span><span class="n">_UIMenu</span><span class="p">.</span><span class="n">Pagination</span><span class="p">.</span><span class="n">Total</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">Y</span> <span class="o">-</span> <span class="mi">37</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Subtitle</span><span class="p">.</span><span class="n">ExtraY</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+<a id="__codelineno-2-187" name="__codelineno-2-187" href="#__codelineno-2-187"></a>    <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Extra</span><span class="p">.</span><span class="n">Up</span> <span class="o">=</span> <span class="n">UIResRectangle</span><span class="p">.</span><span class="n">New</span><span class="p">(</span><span class="mi">0</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="mi">144</span> <span class="o">+</span> <span class="mi">38</span> <span class="o">*</span> <span class="p">(</span><span class="n">_UIMenu</span><span class="p">.</span><span class="n">Pagination</span><span class="p">.</span><span class="n">Total</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">Y</span> <span class="o">-</span> <span class="mi">37</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Subtitle</span><span class="p">.</span><span class="n">ExtraY</span><span class="p">,</span> <span class="mi">431</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+<a id="__codelineno-2-188" name="__codelineno-2-188" href="#__codelineno-2-188"></a>    <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Extra</span><span class="p">.</span><span class="n">Down</span> <span class="o">=</span> <span class="n">UIResRectangle</span><span class="p">.</span><span class="n">New</span><span class="p">(</span><span class="mi">0</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="mi">144</span> <span class="o">+</span> <span class="mi">18</span> <span class="o">+</span> <span class="mi">38</span> <span class="o">*</span> <span class="p">(</span><span class="n">_UIMenu</span><span class="p">.</span><span class="n">Pagination</span><span class="p">.</span><span class="n">Total</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">Y</span> <span class="o">-</span> <span class="mi">37</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Subtitle</span><span class="p">.</span><span class="n">ExtraY</span><span class="p">,</span> <span class="mi">431</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+<a id="__codelineno-2-189" name="__codelineno-2-189" href="#__codelineno-2-189"></a>
+<a id="__codelineno-2-190" name="__codelineno-2-190" href="#__codelineno-2-190"></a>    <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Description</span><span class="p">.</span><span class="n">Bar</span> <span class="o">=</span> <span class="n">UIResRectangle</span><span class="p">.</span><span class="n">New</span><span class="p">(</span><span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="mi">431</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+<a id="__codelineno-2-191" name="__codelineno-2-191" href="#__codelineno-2-191"></a>    <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Description</span><span class="p">.</span><span class="n">Rectangle</span> <span class="o">=</span> <span class="n">Sprite</span><span class="p">.</span><span class="n">New</span><span class="p">(</span><span class="s2">&quot;commonmenu&quot;</span><span class="p">,</span> <span class="s2">&quot;gradient_bgd&quot;</span><span class="p">,</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="mi">127</span><span class="p">,</span> <span class="mi">431</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<a id="__codelineno-2-192" name="__codelineno-2-192" href="#__codelineno-2-192"></a>    <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Description</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">UIResText</span><span class="p">.</span><span class="n">New</span><span class="p">(</span><span class="s2">&quot;Description&quot;</span><span class="p">,</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">X</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">125</span><span class="p">,</span> <span class="mf">0.35</span><span class="p">)</span>
+<a id="__codelineno-2-193" name="__codelineno-2-193" href="#__codelineno-2-193"></a>
+<a id="__codelineno-2-194" name="__codelineno-2-194" href="#__codelineno-2-194"></a>    <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Background</span> <span class="o">=</span> <span class="n">Sprite</span><span class="p">.</span><span class="n">New</span><span class="p">(</span><span class="s2">&quot;commonmenu&quot;</span><span class="p">,</span> <span class="s2">&quot;gradient_bgd&quot;</span><span class="p">,</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="mi">144</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">Y</span> <span class="o">-</span> <span class="mi">37</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Subtitle</span><span class="p">.</span><span class="n">ExtraY</span><span class="p">,</span> <span class="mi">290</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+<a id="__codelineno-2-195" name="__codelineno-2-195" href="#__codelineno-2-195"></a>
+<a id="__codelineno-2-196" name="__codelineno-2-196" href="#__codelineno-2-196"></a>    <span class="kr">if</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">BetterSize</span> <span class="o">==</span> <span class="kc">true</span> <span class="kr">then</span>
+<a id="__codelineno-2-197" name="__codelineno-2-197" href="#__codelineno-2-197"></a>        <span class="n">_UIMenu</span><span class="p">.</span><span class="n">WidthOffset</span> <span class="o">=</span> <span class="nb">math.floor</span><span class="p">(</span><span class="nb">tonumber</span><span class="p">(</span><span class="mi">69</span><span class="p">))</span>
+<a id="__codelineno-2-198" name="__codelineno-2-198" href="#__codelineno-2-198"></a>        <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Logo</span><span class="p">:</span><span class="n">Size</span><span class="p">(</span><span class="mi">431</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">WidthOffset</span><span class="p">,</span> <span class="mi">107</span><span class="p">)</span>
+<a id="__codelineno-2-199" name="__codelineno-2-199" href="#__codelineno-2-199"></a>        <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Title</span><span class="p">:</span><span class="n">Position</span><span class="p">(((</span><span class="n">_UIMenu</span><span class="p">.</span><span class="n">WidthOffset</span> <span class="o">+</span> <span class="mi">431</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="mi">20</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">Y</span><span class="p">)</span>
+<a id="__codelineno-2-200" name="__codelineno-2-200" href="#__codelineno-2-200"></a>        <span class="kr">if</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Subtitle</span><span class="p">.</span><span class="n">Rectangle</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="kr">then</span>
+<a id="__codelineno-2-201" name="__codelineno-2-201" href="#__codelineno-2-201"></a>            <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Subtitle</span><span class="p">.</span><span class="n">Rectangle</span><span class="p">:</span><span class="n">Size</span><span class="p">(</span><span class="mi">431</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">WidthOffset</span> <span class="o">+</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">37</span><span class="p">)</span>
+<a id="__codelineno-2-202" name="__codelineno-2-202" href="#__codelineno-2-202"></a>            <span class="n">_UIMenu</span><span class="p">.</span><span class="n">PageCounter</span><span class="p">.</span><span class="n">Text</span><span class="p">:</span><span class="n">Position</span><span class="p">(</span><span class="mi">425</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">X</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">WidthOffset</span><span class="p">,</span> <span class="mi">110</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">Y</span><span class="p">)</span>
+<a id="__codelineno-2-203" name="__codelineno-2-203" href="#__codelineno-2-203"></a>        <span class="kr">end</span>
+<a id="__codelineno-2-204" name="__codelineno-2-204" href="#__codelineno-2-204"></a>        <span class="kr">if</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Banner</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="kr">then</span>
+<a id="__codelineno-2-205" name="__codelineno-2-205" href="#__codelineno-2-205"></a>            <span class="n">_UIMenu</span><span class="p">.</span><span class="n">Banner</span><span class="p">:</span><span class="n">Size</span><span class="p">(</span><span class="mi">431</span> <span class="o">+</span> <span class="n">_UIMenu</span><span class="p">.</span><span class="n">WidthOffset</span><span class="p">,</span> <span class="mi">107</span><span class="p">)</span>
+<a id="__codelineno-2-206" name="__codelineno-2-206" href="#__codelineno-2-206"></a>        <span class="kr">end</span>
+<a id="__codelineno-2-207" name="__codelineno-2-207" href="#__codelineno-2-207"></a>    <span class="kr">end</span>
+<a id="__codelineno-2-208" name="__codelineno-2-208" href="#__codelineno-2-208"></a>
+<a id="__codelineno-2-209" name="__codelineno-2-209" href="#__codelineno-2-209"></a>    <span class="n">Citizen</span><span class="p">.</span><span class="n">CreateThread</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span>
+<a id="__codelineno-2-210" name="__codelineno-2-210" href="#__codelineno-2-210"></a>        <span class="kr">if</span> <span class="ow">not</span> <span class="n">HasScaleformMovieLoaded</span><span class="p">(</span><span class="n">_UIMenu</span><span class="p">.</span><span class="n">InstructionalScaleform</span><span class="p">)</span> <span class="kr">then</span>
+<a id="__codelineno-2-211" name="__codelineno-2-211" href="#__codelineno-2-211"></a>            <span class="n">_UIMenu</span><span class="p">.</span><span class="n">InstructionalScaleform</span> <span class="o">=</span> <span class="n">RequestScaleformMovie</span><span class="p">(</span><span class="s2">&quot;INSTRUCTIONAL_BUTTONS&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-212" name="__codelineno-2-212" href="#__codelineno-2-212"></a>            <span class="kr">while</span> <span class="ow">not</span> <span class="n">HasScaleformMovieLoaded</span><span class="p">(</span><span class="n">_UIMenu</span><span class="p">.</span><span class="n">InstructionalScaleform</span><span class="p">)</span> <span class="kr">do</span>
+<a id="__codelineno-2-213" name="__codelineno-2-213" href="#__codelineno-2-213"></a>                <span class="n">Citizen</span><span class="p">.</span><span class="n">Wait</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-2-214" name="__codelineno-2-214" href="#__codelineno-2-214"></a>            <span class="kr">end</span>
+<a id="__codelineno-2-215" name="__codelineno-2-215" href="#__codelineno-2-215"></a>        <span class="kr">end</span>
+<a id="__codelineno-2-216" name="__codelineno-2-216" href="#__codelineno-2-216"></a>    <span class="kr">end</span><span class="p">)</span>
+<a id="__codelineno-2-217" name="__codelineno-2-217" href="#__codelineno-2-217"></a>    <span class="kr">return</span> <span class="nb">setmetatable</span><span class="p">(</span><span class="n">_UIMenu</span><span class="p">,</span> <span class="n">UIMenu</span><span class="p">)</span>
+<a id="__codelineno-2-218" name="__codelineno-2-218" href="#__codelineno-2-218"></a><span class="kr">end</span>
+</code></pre></div></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy 2023 <a hfref="https://github.com/waschmaschvanlu" target="_blank" rel="noopener"> Ludaro</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/waschmaschvanlu" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.path", "toc.follow", "navigation.top", "header.autohide", "navigation.footer", "toc.navigate", "content.code.copy", "content.code.annotation", "content.tabs.link", "search.highlight"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a51614de.min.js"></script>
+      
+        
+          <script src="../../../js/custom.js"></script>
+        
+      
+    
+  </body>
+</html>
